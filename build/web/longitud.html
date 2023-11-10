@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <meta name="author" content="Cervera Burrola Jose Israel">
+        <link href="style/estilos_divisas.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="style/estilos_divisas.css" type="text/css">
+        <title>Longitudes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header class="tam2"><h1 style="text-align: center">CONVERSION DE LONGITUDES</h1>
+        </header>
+        <main class="contorno">
+            <section style="float:right contour;">
+                <form>
+                    <br> <label for="med_en">MEDICION DE ENTRADA:</label>
+                    <select id="med_en">
+                        <option value="cm">Centimetros</option>
+                        <option value="pg">Pulgadas</option>
+                        <option value="p">Pies</option>
+
+                    </select>
+            </section>
+            <section style="float:left contour;">
+                <br> <label for="cantidad">CANTIDAD:</label>
+                <input type="number" id="cantidad" name="cantidad">
+            </section>
+            <section style="float:left contour;">
+                <br> <label for="med_fin"> MEDICION A CONVERTIR:</label>
+                <select id="med_fin" >
+                    <option value="cm">Centimetros</option>
+                    <option value="pg">Pulgadas</option>
+                    <option value="p">Pies</option>
+
+                </select>
+            </section>
+            <section style="float:right contour;">
+                <label>RESULTADO:</label> 
+                <input type="button" value="Convertir"  onclick="convertirLong()">
+                <input type="text" id="longitud" name="longitud" readnly>
+                <input type="reset" id="restablecer" name="longitud" readnly>
+            </section>
+        </form>
+    </main>
+    <footer class="tam2">
+
+    </footer>
+    <script src="js/longitud.js" type="text/javascript"></script>
+</body>
+</html>
